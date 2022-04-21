@@ -1,0 +1,252 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <title>My Cats Home</title>
+  <link rel="shortcut icon" type="image/jpg" href="https://icon-library.com/images/cat-icon/cat-icon-2.jpg"/>
+</head>
+<body>
+  <style>
+  /*This part for the whole website */
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #4d2c00;
+    font-size: 15px;
+  }
+  .container {
+    max-width: 600px;
+    margin: auto;
+  }
+  a {
+      text-decoration: none;
+      color: #613700;
+  }
+
+  /* This part for header */
+  #logo {
+    justify-content: center;
+    text-align: center;
+  }
+  #logo img {
+    max-width: 30%;
+    max-height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  #main-nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgb(187, 187, 187);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+  }
+
+  /*This part for main body*/
+  /* 2 collumns for mobile
+  From here*/
+  #main li {
+    display: flex;
+    max-width: 40%;
+  }
+  /*to here */
+  #main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .cat-types {
+    text-align: center;
+    background-color: rgb(187, 187, 187);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+  }
+  .cat-intro img {
+    max-width:100%;
+    max-height: auto;
+    border-radius: 8px;
+  }
+  .cat-list {
+    flex: none;
+    align-self: auto;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #613700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .cat-intro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  ul {
+    padding: 0;
+  }
+
+  /*This part for footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  #infor {
+    font-weight: bold;
+  }
+  #backtotop {
+    bottom: 5px;
+    right: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(187, 187, 187);
+    padding: 10px; 
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  /*Designs for website start here
+  Break point:650px */
+  @media only screen and (min-width: 650px) {
+  #senior-cats {
+    border-bottom: 50px;
+  }
+  body {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 1200px;
+  }
+  #logo img {
+    max-width: 35%;
+  }
+  #main-nav {
+    display: inline-block;
+    padding-right: 20px ;
+    background-color: rgb(187, 187, 187);
+  }
+  .cat-types {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    background-color: rgb(187, 187, 187);
+    height: 65px;
+  }
+  /*Designs the main body: 
+  - 3 collumns for web
+  From here*/
+  #main li {
+    display: flex;
+    max-width: 30%;
+  }
+  #backtotop {
+    font-size: 18px;
+  }
+}
+</style>
+<header class="container">
+  <!--main menu starts here -->
+    <section id="main-menu">
+      <div id="logo">
+        <a href=""><img src="https://i.postimg.cc/G9XnpSyK/Logo.png" alt="Logo"></a>
+      </div>
+      <div id="main-nav">
+        <a href="#">Home</a>
+        <a href="#senior-cats">Senior Cats</a>
+        <a href="#junior-cats">Junior Cats</a>
+        <a href="http://bbilkevych.s3-website.eu-central-1.amazonaws.com/error.html">Help</a>
+      </div>
+    </section>
+<!--main menu ends here -->
+
+<!--hero image starts -->
+  <section>
+    <div id="hero-image">
+      <a href="http://bbilkevych.s3-website.eu-central-1.amazonaws.com/error.html"><img src="https://i.postimg.cc/Hknf2z5G/Cat-hero-image.jpg" alt="hero-img"></a>
+    </div>
+  </section>
+</header>
+<!--hero image ends -->
+
+<main class="container">
+  <section id="main">
+  <!--senior cats section starts here -->
+    <div id="senior-cats">
+      <nav class="cat-types">SENIOR CATS</nav>
+        <ul class="cat-list">
+          <li class="cat-intro">
+            <a href="#"><img src="https://i.postimg.cc/dkQSPw4Y/Senior1.jpg" alt="Tabby"></a>
+            <p>Tabby<br>2 years old<br>Loves sunlight</p>
+          </li>
+          <li class="cat-intro">
+            <a href="#"><img src="https://i.postimg.cc/nsp3Bn8D/Senior2.jpg" alt="Calico"></a>
+            <p>Calico<br>2 years old<br>Eats a lot</p>
+          </li>
+          <li class="cat-intro">
+            <a href="#"><img src="https://i.postimg.cc/N25JFD3C/Senior3.jpg" alt="Bob"></a>
+            <p>Bob<br>3 years old<br>Very playful</p>
+          </li> 
+          <li class="cat-intro">
+            <a href="#"><img src="https://i.postimg.cc/rdNYPKGj/Senior4.jpg" alt="Alley"></a>
+            <p>Alley<br>4 years old<br>Curios</p>
+          </li>
+          <li class="cat-intro">
+            <a href="#"><img src="https://i.postimg.cc/K1n91RWb/Senior5.jpg" alt="Momo"></a>
+            <p>Momo<br>2 years old<br>Moderate playful</p>
+          </li>
+          <li class="cat-intro">
+            <a href="#"><img src="https://i.postimg.cc/nC9StdYC/Senior6.jpg" alt="Smush"></a>
+            <p>Smush<br>2 years old<br>Grumpy</p>
+          </li>                                                          
+        </ul>
+      </div> 
+      <!--senior cats section ends here -->
+
+      <!-- junior cats section starts here -->
+      <div id="junior-cats">
+        <nav class="cat-types">JUNIOR CATS</nav>
+          <ul class="cat-list">
+            <li class="cat-intro">
+              <a href="#"><img src="https://i.postimg.cc/4YhDBfF2/Junior1.jpg" alt="Jerry"></a>
+              <p>Jerry<br>5 months old<br>Friendly</p>
+            </li>
+            <li class="cat-intro">
+              <a href="#"><img src="https://i.postimg.cc/Pp6Vd9R8/Junior2.jpg" alt="Cookie"></a>
+              <p>Cookie<br>6 months old<br>Sleeps a lot</p>
+            </li>
+            <li class="cat-intro">
+              <a href="#"><img src="https://i.postimg.cc/1nM2fffX/Junior3.jpg" alt="Bee"></a>
+              <p>Bee<br>8 months old<br>Quiet and chill</p>
+            </li> 
+            <li class="cat-intro">
+              <a href="#"><img src="https://i.postimg.cc/jWHGY8Tz/Junior4.jpg" alt="Sheddy"></a>
+              <p>Sheddy<br>9 months old<br>Sheds a lot</p>
+            </li>
+            <li class="cat-intro">
+              <a href="#"><img src="https://i.postimg.cc/6y8gp6w6/Junior5.jpg" alt="Choco"></a>
+              <p>Choco<br>4 months old<br>Loves sweet</p>
+            </li>
+            <li class="cat-intro">
+              <a href="#"><img src="https://i.postimg.cc/nMRNxjyw/Junior6.jpg" alt="Cheese"></a>
+              <p>Cheese<br>3 months old<br>Only eats fish</p>
+            </li>                                                          
+          </ul>
+        </div>
+        <!--Junior cats section ends here -->
+      </section>
+  </main>
+</body>
+</html>
